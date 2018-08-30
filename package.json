@@ -1,5 +1,5 @@
 {
-  "name": "react-native-view-overflow",
+  "name": "react-native-view-overflow-ableyang",
   "description": "solve view overflow in android",
   "version": "0.0.4",
   "author": "entria",
@@ -17,5 +17,9 @@
     "release:minor": "npm version minor && git push origin && git push origin --follow-tags",
     "release:patch": "npm version patch && git push origin && git push origin --follow-tags",
     "test": "echo \"Error: no test specified\" && exit 1"
+  }
+  ,"repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbelYangGitHub/react-native-view-overflow.git"
   }
 }

@@ -10,12 +10,18 @@ public class RNViewOverflowLayout extends ReactViewGroup {
         super(context);
     }
 
+    protected boolean isClipChildren;
+    public RNViewOverflowLayout setIsClipChildren(boolean isClipChildren) {
+        this.isClipChildren = isClipChildren;
+        return this;
+    }
+
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
 
         try {
-            ((ViewGroup) getParent()).setClipChildren(false);
+            ((ViewGroup) getParent()).setClipChildren(isClipChildren);
         } catch (Exception e) {
             e.printStackTrace();
         }
